@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "simplecoinmod",
+  "version": "${version}",
+
+  "name": "Simple Coin Mod",
+  "description": "This is a simple coin-add mode!",
+  "authors": [
+    "dot mario"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/simplecoinmod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.dotmario.simplecoin.SimpleCoinMod"
+    ],
+    "client": [
+      "com.dotmario.simplecoin.SimpleCoinModClient"
+    ]
+  },
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
