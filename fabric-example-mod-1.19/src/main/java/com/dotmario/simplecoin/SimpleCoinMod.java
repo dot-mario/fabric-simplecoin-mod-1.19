@@ -1,5 +1,8 @@
 package com.dotmario.simplecoin;
 
+import com.dotmario.simplecoin.item.ItemCoinBronze;
+import com.dotmario.simplecoin.item.ItemCoinGold;
+import com.dotmario.simplecoin.item.ItemCoinSilver;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -8,7 +11,7 @@ public class SimpleCoinMod implements ModInitializer {
     // This logger is used to write text to the console and the log file.
     // It is considered best practice to use your mod id as the logger's name.
     // That way, it's clear which mod wrote info, warnings, and errors.
-    public static final String MOD_ID = "toonationcoinmod";
+    public static final String MOD_ID = "simplecoinmod";
     public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
     @Override
@@ -18,5 +21,9 @@ public class SimpleCoinMod implements ModInitializer {
         // Proceed with mild caution.
 
         LOGGER.info("Hello Fabric world!");
+
+        ItemCoinBronze.registerModItems();
+        ItemCoinSilver.registerModItems();
+        ItemCoinGold.registerModItems();
     }
 }
