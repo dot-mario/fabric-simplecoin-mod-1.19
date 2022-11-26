@@ -8,11 +8,11 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class ItemCoin {
-    public static final Item COINBRONZE = registerItem("coinBronze",
+    public static final Item COINBRONZE = registerItem("coinbronze",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
-    public static final Item COINSILVER = registerItem("coinSilver",
+    public static final Item COINSILVER = registerItem("coinsilver",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
-    public static final Item COINGOLD = registerItem("coinGold",
+    public static final Item COINGOLD = registerItem("coingold",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
     private static Item registerItem(String name, Item item) {
