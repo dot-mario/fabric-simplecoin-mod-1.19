@@ -1,8 +1,6 @@
 package com.dotmario.simplecoin;
 
-import com.dotmario.simplecoin.item.ItemCoinBronze;
-import com.dotmario.simplecoin.item.ItemCoinGold;
-import com.dotmario.simplecoin.item.ItemCoinSilver;
+import com.dotmario.simplecoin.item.ItemCoin;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,8 +20,6 @@ public class SimpleCoinMod implements ModInitializer {
 
         LOGGER.info("Hello Fabric world!");
 
-        ItemCoinBronze.registerModItems();
-        ItemCoinSilver.registerModItems();
-        ItemCoinGold.registerModItems();
+        ItemCoin.registerModItems();
     }
 }
